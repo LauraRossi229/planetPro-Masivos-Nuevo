@@ -1,217 +1,270 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-.nav_txt{
-    text-decoration: none;
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color:rgba(1, 11, 19, 0.822);
-    transition: all 1s;
+.principal_nosotros {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "nosotros_media   nosotros_h1" "nosotros_media   nosotros_txt" "nosotros_media   nosotros_boton";
+  background-image: linear-gradient(to bottom, rgb(152, 155, 224), rgb(205, 142, 211));
 }
 
-
-.encabezado_logo_txt_font{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: small;
-    font-style: oblique;
-    color:rgba(0, 136, 255, 0.822);
-
+.principal_servicios {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "slide_servicio" "descripcion_servicio_sms" "descripcion_servicio_wa" "descripcion_servicio_mail";
+  background-color: rgb(233, 233, 243);
 }
 
-.principal_index{
-    background-color: rgb(124, 127, 218);
-    border:dotted 1px rgb(124, 127, 218);
-    background-image: linear-gradient(to right,rgb(92, 97, 229), rgb(197, 24, 216));
- 
+.slide_servicio {
+  grid-area: slide_servicio;
 }
 
-.titulo_h1{
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: center;
-    font-style: normal;
-    justify-content: center;
-    color:rgb(59, 56, 56);
-    font-weight: bolder;
-    font-size: 2.4rem;
-    font-family:'Roboto', 'Sans Serif';
-    align-content: center;
-
+#descripcion_servicio_sms {
+  grid-area: descripcion_servicio_sms;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#descripcion_servicio_wa {
+  grid-area: descripcion_servicio_wa;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#descripcion_servicio_mail {
+  grid-area: descripcion_servicio_mail;
+  margin-left: 30px;
+  margin-right: 40px;
 }
 
-.titulo_h2{
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align:center;
-    font-style: normal;
-    justify-content: center;
-    color:rgb(59, 56, 56);
-    font-weight: bolder;
-    font-size: 1.5rem;
-    font-family:'Roboto', 'Sans Serif';
-    align-content:center;
-
-}
-.titulo_iconos{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    list-style-type: none;
-    align-content: center;
-    justify-content: center;
-
-  
-}
-.titulo_iconos li i{
-    padding-right: 20px;
-    color:rgb(3, 3, 142);
+.principal_index {
+  background-color: rgb(124, 127, 218);
+  border: dotted 1px rgb(124, 127, 218);
+  background-image: linear-gradient(to right, rgb(92, 97, 229), rgb(197, 24, 216));
 }
 
-.index_img{
-
-    align-items: center;
-    justify-items: center;
-    align-content: center;
+.index_img {
+  align-items: center;
+  justify-items: center;
+  align-content: center;
 }
-
-.index_img img{
-    padding-top: 20px;
-    padding-left: 60px;
-    padding-bottom: 10px;
-    border-radius: 10%;
-    border-color: black;
-    width: 250px;
-    height: 385px;
-    transition: height 1s, width 1s;
-
-  
+.index_img img {
+  padding: 20px 60px 10px 0px;
+  border-radius: 10%;
+  border-color: black;
+  height: 385px;
+  width: 250px;
+  transition: height 1s, width 1s;
 }
-
 .index_img img:hover {
-
-    height: 442px; width: 288px;
-
+  height: 462px;
+  width: 287.5px;
 }
 
-
-
-.pie_de_pagina_logo{
-    margin-top: 20px;
-    width: 110px;
-    height: 90px;
-    padding: 5px;
-
-
+.pie_de_pagina_logo, .pie_de_pagina_fiscal img {
+  margin-top: 20px;
+  padding: 5px;
+  height: 90px;
+  width: 110px;
 }
-.pie_de_pagina_social{
-   
-   
+.pie_de_pagina_fiscal img {
+  border: solid 5px black;
+  height: 90px;
+  width: 77px;
+}
+
+.nosotros_media {
+  grid-area: nosotros_media;
+}
+.nosotros_media video {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  border: 5px double aqua;
+  border-radius: 10%;
+  margin: 30px 50px 30px 20px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: rgb(55, 87, 214);
+}
+
+.planes {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: center;
+  padding-top: 10px;
+  background-color: rgb(222, 236, 236);
+}
+
+.contacto_y_acceso {
+  background-color: #181b34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.encabezado_logo_txt_font {
+  font: normal 2.4rem bolder "Roboto", "Sans Serif";
+  color: rgb(8, 118, 236);
+}
+
+.nav_txt {
+  text-decoration: none;
+  padding: 10px;
+  font: oblique 1rem Verdana, Geneva, Tahoma, sans-serif;
+  transition: all 1s;
+}
+
+.titulo_h1, .titulo_h2 {
+  margin: 30px 40px 40px 40px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: rgb(17, 15, 15);
+  font: normal 2.4rem bolder "Roboto", "Sans Serif";
+}
+.titulo_h2 {
+  color: rgb(43, 43, 45);
+  font-size: 1.5rem;
+}
+
+.pie_de_pagina_legal p {
+  color: rgb(8, 118, 236);
+  font: normal 0.8rem Verdana, Geneva, Tahoma, sans-serif;
+  align-content: center;
+  text-align: center;
+}
+
+.nosotros_h1 {
+  grid-area: nosotros_h1;
+  text-align: center;
+  align-items: center;
+}
+.nosotros_h1_font {
+  font: normal 3rem bolder "Roboto", "Sans Serif";
+  color: rgb(38, 41, 185);
+}
+.nosotros_h1_txt {
+  grid-area: nosotros_txt;
+}
+.nosotros_h1_txt p {
+  font: lighter 1.2rem "Roboto", "Sans Serif";
+  margin-left: 30px;
+  margin-right: 40px;
+  margin-top: 5px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  text-justify: distribute;
+  color: rgb(46, 8, 104);
+}
+
+.descripcion_servicio_p {
+  margin: auto;
+  font-size: medium;
+  text-align: justify;
+}
+
+.titulo_iconos {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-content: center;
+  justify-content: center;
+}
+.titulo_iconos li i {
+  padding-right: 20px;
+  color: rgb(242, 219, 246);
 }
 
 .pie_de_pagina_social ul {
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.pie_de_pagina_social ul li {
+  padding-top: 20px;
+  padding-right: 30px;
+}
+.pie_de_pagina_social ul li i {
+  color: blue;
+  transition: color 2s;
+}
+.pie_de_pagina_social ul li i:hover {
+  color: rgb(106, 7, 109);
+}
+
+@media only screen and (max-width: 1024px) {
+  .principal_nosotros {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "nosotros_h1" "nosotros_txt" "nosotros_boton" "nosotros_media";
+    align-items: center;
+  }
+  .nosotros_media video {
+    height: 80%;
+    width: 80%;
     flex-direction: row;
-    flex-wrap:wrap;
-    list-style-type: none;
- 
-
-   
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    align-content: flex-start;
+  }
+  .planes {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-
-.pie_de_pagina_social ul li{
- padding-top: 20px;
- padding-right: 30px;
-
-}
-.pie_de_pagina_social ul li i{
-    color:rgb(49, 18, 92);
-    transition: color 2s;
-   }
-
-   .pie_de_pagina_social ul li i:hover {
-   color: blue;
-}
-.pie_de_pagina_fiscal{
-
-    
-}
-
-.pie_de_pagina_fiscal img{
-    margin-top: 20px;
-    width: 80px;
-    height: 90px;
-    border:solid 5px black;   
-    padding: 5px;
-}
-
-.pie_de_pagina_legal{
-    
-
-}
-.pie_de_pagina_legal p{
-        text-align:center;
-        color:blue;
-        font-size: 12px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        align-content: center;
-      
-       
-    }
-
-
 @media screen and (max-width: 768px) {
-    
-    .index_img img{
-        padding-left: 20px;
-        width: 150px;
-        height: 231px;
-
-    }
-    .titulo_iconos{
-       
-        margin-top: 20px;
-    }
-
-    .nosotros_media video{
-     width:60% ;
-     height: 60%;
-    }
-  
-   
+  .index_img img {
+    margin: 30px 40px 40px 40px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 269.5px;
+    width: 175px;
+  }
+  .titulo_iconos {
+    margin-top: 20px;
+  }
+  .nosotros_media video {
+    height: 60%;
+    width: 60%;
+  }
 }
-
-
 @media screen and (max-width: 576px) {
-    .nosotros_boton_c{
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        }
-
-    .acceso_txt{
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .contacto_ajuste{
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        text-justify: auto;
-
-}
-}
+  .nosotros_boton_c {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .acceso_txt {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .contacto_ajuste {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-justify: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

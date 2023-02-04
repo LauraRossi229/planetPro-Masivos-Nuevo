@@ -12,6 +12,34 @@
   background-image: linear-gradient(to bottom, rgb(152, 155, 224), rgb(205, 142, 211));
 }
 
+.principal_servicios {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "slide_servicio" "descripcion_servicio_sms" "descripcion_servicio_wa" "descripcion_servicio_mail";
+  background-color: rgb(233, 233, 243);
+}
+
+.slide_servicio {
+  grid-area: slide_servicio;
+}
+
+#descripcion_servicio_sms {
+  grid-area: descripcion_servicio_sms;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#descripcion_servicio_wa {
+  grid-area: descripcion_servicio_wa;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+#descripcion_servicio_mail {
+  grid-area: descripcion_servicio_mail;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
 .principal_index {
   background-color: rgb(124, 127, 218);
   border: dotted 1px rgb(124, 127, 218);
@@ -62,6 +90,27 @@
   padding: 5px;
   overflow: hidden;
   background-color: rgb(55, 87, 214);
+}
+
+.planes {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: center;
+  padding-top: 10px;
+  background-color: rgb(222, 236, 236);
+}
+
+.contacto_y_acceso {
+  background-color: #181b34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .encabezado_logo_txt_font {
@@ -117,7 +166,13 @@
   align-items: center;
   justify-content: center;
   text-justify: distribute;
-  color: gray;
+  color: rgb(46, 8, 104);
+}
+
+.descripcion_servicio_p {
+  margin: auto;
+  font-size: medium;
+  text-align: justify;
 }
 
 .titulo_iconos {
@@ -160,8 +215,8 @@
     align-items: center;
   }
   .nosotros_media video {
-    width: 80%;
     height: 80%;
+    width: 80%;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
@@ -186,10 +241,8 @@
     margin-top: 20px;
   }
   .nosotros_media video {
-    width: 60%;
     height: 60%;
-    height: 192.5px;
-    width: 80%;
+    width: 60%;
   }
 }
 @media screen and (max-width: 576px) {

@@ -7,7 +7,7 @@
 	}
 	.nosotros_media {
 		video {
-            @include sizes($video_size_w*0.8, $video_size_h*0.8);
+            @include sizes(80%,80%);
 			flex-direction: row;
 			margin-left: auto;
 			margin-right: auto;
@@ -38,7 +38,7 @@
 		margin-top: 20px;
 	}
     .nosotros_media video{
-        @include sizes(($video_size_w/2), ($video_size_h/2));
+        @include sizes(60%, 60%);
 }
 }
 
