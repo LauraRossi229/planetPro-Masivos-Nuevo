@@ -1,26 +1,35 @@
 $colorbase:rgb(124, 127, 218);
 $colorgenerico:rgb(92, 97, 229);
 $colorprincipal:rgb(197, 24, 216);
+$bg_nosotros_media:rgb(55, 87, 214);
+$border_nosotros_media:aqua;
 
 
 $principal_h1:rgb(17, 15, 15);
 $principal_h2:rgb(43, 43, 45);
 $main_p:rgb(8, 118, 236);
 $logo_txt:rgb(8, 118, 236);
+$nosotros_h1: rgb(38, 41, 185);
+$nosotros_txt: gray;
 
 $icons_color:rgb(242, 219, 246);
 $icons_color_footer:blue;
 $icons_color_footer_t:rgb(106, 7, 109);
 
-
+$font-family_1: 'Roboto', 'Sans Serif';
 $logo_font: oblique smaller bold Georgia, 'Times New Roman', Times, serif;
 $nav_font: oblique 1rem  Verdana, Geneva, Tahoma, sans-serif;
-$principal_font: normal 2.4rem bolder 'Roboto', 'Sans Serif';
-$logo_font: normal 2.4rem bolder 'Roboto', 'Sans Serif';
+$principal_font: normal 2.4rem bolder $font-family_1;
+$nosotros_font: normal 3rem bolder $font-family_1;
+$nosotros_font2: lighter 1.2rem  $font-family_1;
+$logo_font: normal 2.4rem bolder $font-family_1;
 $pie_de_pagina_font: normal 0.8rem Verdana, Geneva, Tahoma, sans-serif;
 
 $principal_h_margin: 30px 40px 40px 40px;
 $principal_img_padding: 20px 60px 10px 0px;  
+
+$nosotros_media_margin:30px 50px 30px 20px;
+$nosotros_media_borde: 5px double $border_nosotros_media;
 
 $logo_size_w:110px;
 $logo_size_h:90px;
@@ -30,3 +39,11 @@ $principal_img_size_h:385px;
 
 $fiscal_img_size_w:$logo_size_w*0.7;
 $fiscal_img_size_h:$logo_size_h;
+
+$video_size_w: 100%;
+$vodeo_size_h: 100%;
+
+
+$nosotros_columnas: auto auto;
+$nosotros_filas: auto auto auto;
+$nosotros_areas:"nosotros_media   nosotros_h1" "nosotros_media   nosotros_txt" "nosotros_media   nosotros_boton";

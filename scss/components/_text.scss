@@ -36,3 +36,29 @@
         text-align: center;
 	}
 }
+
+.nosotros{
+            &_h1 {
+                grid-area: nosotros_h1;
+                text-align: center;
+                align-items: center;
+                    &_font {
+                        font:$nosotros_font;
+                        color: $nosotros_h1;
+                    }
+            &_txt {
+	            grid-area: nosotros_txt;
+	                p {
+                        font:$nosotros_font2;
+                        margin-left: 30px;
+                        margin-right: 40px;
+                        margin-top: 5px;
+                        text-align: left;
+                        align-items: center;
+                        justify-content: center;
+                        text-justify: distribute;
+                        color: $nosotros_txt;
+	                }
+            }
+        }
+    }

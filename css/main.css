@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.principal_nosotros {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "nosotros_media   nosotros_h1" "nosotros_media   nosotros_txt" "nosotros_media   nosotros_boton";
+  background-image: linear-gradient(to bottom, rgb(152, 155, 224), rgb(205, 142, 211));
+}
+
 .principal_index {
   background-color: rgb(124, 127, 218);
   border: dotted 1px rgb(124, 127, 218);
@@ -40,6 +48,22 @@
   width: 77px;
 }
 
+.nosotros_media {
+  grid-area: nosotros_media;
+}
+.nosotros_media video {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  border: 5px double aqua;
+  border-radius: 10%;
+  margin: 30px 50px 30px 20px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: rgb(55, 87, 214);
+}
+
 .encabezado_logo_txt_font {
   font: normal 2.4rem bolder "Roboto", "Sans Serif";
   color: rgb(8, 118, 236);
@@ -72,6 +96,30 @@
   text-align: center;
 }
 
+.nosotros_h1 {
+  grid-area: nosotros_h1;
+  text-align: center;
+  align-items: center;
+}
+.nosotros_h1_font {
+  font: normal 3rem bolder "Roboto", "Sans Serif";
+  color: rgb(38, 41, 185);
+}
+.nosotros_h1_txt {
+  grid-area: nosotros_txt;
+}
+.nosotros_h1_txt p {
+  font: lighter 1.2rem "Roboto", "Sans Serif";
+  margin-left: 30px;
+  margin-right: 40px;
+  margin-top: 5px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  text-justify: distribute;
+  color: gray;
+}
+
 .titulo_iconos {
   margin-top: 40px;
   display: flex;
@@ -102,4 +150,68 @@
 }
 .pie_de_pagina_social ul li i:hover {
   color: rgb(106, 7, 109);
+}
+
+@media only screen and (max-width: 1024px) {
+  .principal_nosotros {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "nosotros_h1" "nosotros_txt" "nosotros_boton" "nosotros_media";
+    align-items: center;
+  }
+  .nosotros_media video {
+    width: 80%;
+    height: 80%;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    align-content: flex-start;
+  }
+  .planes {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index_img img {
+    margin: 30px 40px 40px 40px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 269.5px;
+    width: 175px;
+  }
+  .titulo_iconos {
+    margin-top: 20px;
+  }
+  .nosotros_media video {
+    width: 60%;
+    height: 60%;
+    height: 192.5px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nosotros_boton_c {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .acceso_txt {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .contacto_ajuste {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-justify: auto;
+  }
 }/*# sourceMappingURL=main.css.map */

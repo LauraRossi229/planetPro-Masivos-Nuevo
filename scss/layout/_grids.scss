@@ -1,0 +1,9 @@
+
+.principal_nosotros {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: "nosotros_media   nosotros_h1" "nosotros_media   nosotros_txt" "nosotros_media   nosotros_boton";
+	background-image: linear-gradient(to bottom,rgb(152, 155, 224), rgb(205, 142, 211));
+}
+

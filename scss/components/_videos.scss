@@ -1,0 +1,16 @@
+
+.nosotros_media {
+	grid-area: nosotros_media;
+	video {
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		align-content: center;
+		border: $nosotros_media_borde;
+        border-radius: 10%;
+		margin:$nosotros_media_margin;
+		padding: 5px;
+		overflow: hidden;
+		background-color: $bg_nosotros_media;
+	}
+}
