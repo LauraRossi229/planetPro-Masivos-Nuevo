@@ -1,0 +1,38 @@
+.encabezado_logo_txt_font {
+    font:$logo_font;
+    color: map-get($paleta_colores_txt, logo_txt);
+}
+
+.nav_txt {
+	text-decoration: none;
+	padding: 10px;
+	font:$nav_font;
+	transition: all 1s;
+
+}
+
+.titulo{
+
+        &_h1 {
+            margin:$principal_h_margin;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            color: map-get($paleta_colores_txt, principal_h1);
+            font: $principal_font;
+        }
+        &_h2 {
+            @extend .titulo_h1;
+            color: map-get($paleta_colores_txt, principal_h2);
+            font-size: 1.5rem;
+        }
+}
+
+.pie_de_pagina_legal {
+	p {
+        color: map-get($paleta_colores_txt, main_p);
+        font:$pie_de_pagina_font;
+		align-content: center;
+        text-align: center;
+	}
+}

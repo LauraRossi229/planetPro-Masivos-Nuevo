@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.principal_index {
+  background-color: rgb(124, 127, 218);
+  border: dotted 1px rgb(124, 127, 218);
+  background-image: linear-gradient(to right, rgb(92, 97, 229), rgb(197, 24, 216));
+}
+
+.index_img {
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+.index_img img {
+  padding: 20px 60px 10px 0px;
+  border-radius: 10%;
+  border-color: black;
+  height: 385px;
+  width: 250px;
+  transition: height 1s, width 1s;
+}
+.index_img img:hover {
+  height: 462px;
+  width: 287.5px;
+}
+
+.pie_de_pagina_logo, .pie_de_pagina_fiscal img {
+  margin-top: 20px;
+  padding: 5px;
+  height: 90px;
+  width: 110px;
+}
+.pie_de_pagina_fiscal img {
+  border: solid 5px black;
+  height: 90px;
+  width: 77px;
+}
+
+.encabezado_logo_txt_font {
+  font: normal 2.4rem bolder "Roboto", "Sans Serif";
+  color: rgb(8, 118, 236);
+}
+
+.nav_txt {
+  text-decoration: none;
+  padding: 10px;
+  font: oblique 1rem Verdana, Geneva, Tahoma, sans-serif;
+  transition: all 1s;
+}
+
+.titulo_h1, .titulo_h2 {
+  margin: 30px 40px 40px 40px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: rgb(17, 15, 15);
+  font: normal 2.4rem bolder "Roboto", "Sans Serif";
+}
+.titulo_h2 {
+  color: rgb(43, 43, 45);
+  font-size: 1.5rem;
+}
+
+.pie_de_pagina_legal p {
+  color: rgb(8, 118, 236);
+  font: normal 0.8rem Verdana, Geneva, Tahoma, sans-serif;
+  align-content: center;
+  text-align: center;
+}
+
+.titulo_iconos {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-content: center;
+  justify-content: center;
+}
+.titulo_iconos li i {
+  padding-right: 20px;
+  color: rgb(242, 219, 246);
+}
+
+.pie_de_pagina_social ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.pie_de_pagina_social ul li {
+  padding-top: 20px;
+  padding-right: 30px;
+}
+.pie_de_pagina_social ul li i {
+  color: blue;
+  transition: color 2s;
+}
+.pie_de_pagina_social ul li i:hover {
+  color: rgb(106, 7, 109);
+}/*# sourceMappingURL=main.css.map */

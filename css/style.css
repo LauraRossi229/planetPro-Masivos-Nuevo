@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav_txt{
+    text-decoration: none;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color:rgba(1, 11, 19, 0.822);
+    transition: all 1s;
+}
+
+
+.encabezado_logo_txt_font{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: small;
+    font-style: oblique;
+    color:rgba(0, 136, 255, 0.822);
+
+}
+
+.principal_index{
+    background-color: rgb(124, 127, 218);
+    border:dotted 1px rgb(124, 127, 218);
+    background-image: linear-gradient(to right,rgb(92, 97, 229), rgb(197, 24, 216));
+ 
+}
+
+.titulo_h1{
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    font-style: normal;
+    justify-content: center;
+    color:rgb(59, 56, 56);
+    font-weight: bolder;
+    font-size: 2.4rem;
+    font-family:'Roboto', 'Sans Serif';
+    align-content: center;
+
+}
+
+.titulo_h2{
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align:center;
+    font-style: normal;
+    justify-content: center;
+    color:rgb(59, 56, 56);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family:'Roboto', 'Sans Serif';
+    align-content:center;
+
+}
+.titulo_iconos{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    list-style-type: none;
+    align-content: center;
+    justify-content: center;
+
+  
+}
+.titulo_iconos li i{
+    padding-right: 20px;
+    color:rgb(3, 3, 142);
+}
+
+.index_img{
+
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.index_img img{
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    border-radius: 10%;
+    border-color: black;
+    width: 250px;
+    height: 385px;
+    transition: height 1s, width 1s;
+
+  
+}
+
+.index_img img:hover {
+
+    height: 442px; width: 288px;
+
+}
+
+
+
+.pie_de_pagina_logo{
+    margin-top: 20px;
+    width: 110px;
+    height: 90px;
+    padding: 5px;
+
+
+}
+.pie_de_pagina_social{
+   
+   
+}
+
+.pie_de_pagina_social ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    list-style-type: none;
+ 
+
+   
+}
+
+.pie_de_pagina_social ul li{
+ padding-top: 20px;
+ padding-right: 30px;
+
+}
+.pie_de_pagina_social ul li i{
+    color:rgb(49, 18, 92);
+    transition: color 2s;
+   }
+
+   .pie_de_pagina_social ul li i:hover {
+   color: blue;
+}
+.pie_de_pagina_fiscal{
+
+    
+}
+
+.pie_de_pagina_fiscal img{
+    margin-top: 20px;
+    width: 80px;
+    height: 90px;
+    border:solid 5px black;   
+    padding: 5px;
+}
+
+.pie_de_pagina_legal{
+    
+
+}
+.pie_de_pagina_legal p{
+        text-align:center;
+        color:blue;
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        align-content: center;
+      
+       
+    }
+
+
+@media screen and (max-width: 768px) {
+    
+    .index_img img{
+        padding-left: 20px;
+        width: 150px;
+        height: 231px;
+
+    }
+    .titulo_iconos{
+       
+        margin-top: 20px;
+    }
+
+    .nosotros_media video{
+     width:60% ;
+     height: 60%;
+    }
+  
+   
+}
+
+
+@media screen and (max-width: 576px) {
+    .nosotros_boton_c{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        }
+
+    .acceso_txt{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contacto_ajuste{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        text-justify: auto;
+
+}
+}

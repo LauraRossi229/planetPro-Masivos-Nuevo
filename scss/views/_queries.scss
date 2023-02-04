@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+	.index_img {
+        
+		img {
+            margin:$principal_h_margin;
+            align-items:center;
+            align-content: center;
+            justify-content: center;
+            @include sizes($principal_img_size_w/2, $principal_img_size_h/2);
+           
+		}
+	}
+	.titulo_iconos {
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,32 @@
+
+.index_img {
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	img {
+		padding: $principal_img_padding;
+		border-radius: 10%;
+		border-color: black;
+        @include sizes($principal_img_size_w, $principal_img_size_h);
+		transition: height 1s, width 1s;
+		&:hover {
+            @include sizes($principal_img_size_w*1.15, $principal_img_size_h*1.2);
+			
+		}
+	}
+}
+
+.pie_de_pagina{
+                &_logo {
+                margin-top: 20px;
+                padding: 5px;
+                @include sizes($logo_size_w, $logo_size_h);
+                }
+                &_fiscal {
+                    img {
+                        @extend .pie_de_pagina_logo;
+                        border: solid 5px black;
+                        @include sizes($fiscal_img_size_w, $fiscal_img_size_h);
+                    }
+                }
+                }

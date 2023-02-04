@@ -1,0 +1,35 @@
+
+.titulo_iconos {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style-type: none;
+	align-content: center;
+	justify-content: center;
+	li {
+		i {
+			padding-right: 20px;
+			color:$icons_color;
+		}
+	}
+}
+.pie_de_pagina_social {
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		list-style-type: none;
+		li {
+			padding-top: 20px;
+			padding-right: 30px;
+			i {
+				color:$icons_color_footer;
+				transition: color 2s;
+				&:hover {
+					color:$icons_color_footer_t;
+				}
+			}
+		}
+	}
+}

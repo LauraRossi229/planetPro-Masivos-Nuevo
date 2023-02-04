@@ -1,0 +1,6 @@
+
+.principal_index {
+	background-color: map-get($paleta_colores_main,index_base);
+	border: dotted 1px map-get($paleta_colores_main,index_base);
+	background-image: linear-gradient(to right, map-get($paleta_colores_main,index_gradiente1), map-get($paleta_colores_main,index_gradiente2));
+}
